@@ -19,3 +19,13 @@ def reverse_array(integers)
 new_array= integers.reverse
 new_array
 end
+
+def kesha_maker(array)
+  maker = []
+  array.each do |word|
+  word_array = word.split ""
+  word_array[2] = "$"
+  maker << word_array.join
+end
+maker
+end
